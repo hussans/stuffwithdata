@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title> Stuff With Data </title>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <select id="pageSize">
+                <option value="10"> 10 </option>
+                <option value="20"> 20 </option>
+                <option value="30"> 30 </option>
+                <option value="40"> 40 </option>
+                <option value="50"> 50 </option>
+            </select>
+        </div>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th id="idHeader"> ID </th>
+                    <th id="firstNameHeader"> First Name </th>
+                    <th id="lastNameHeader"> Last Name </th>
+                    <th id="heightHeader"> Height </th>
+                    <th id="ageHeader"> Age </th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+        <div class="pagination" id="pagination"></div>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/data.js"></script>
+</body>
+</html>
